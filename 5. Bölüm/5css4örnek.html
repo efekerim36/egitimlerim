@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Örnek 4</title>
+    <style>
+        .image1 {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 40%;
+        }
+        .red {
+            width: 100px;
+            height: 100px;
+            background-color: palevioletred;
+            position: relative;
+            left: 200px;
+            bottom: 220px;
+            z-index: -1;
+        }
+        .red-2 {
+            width: 100px;
+            height: 100px;
+            background-color: palevioletred;
+            position: relative;
+            left: 430px;
+            bottom: 180px;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <img class="image1" src="../logo/toplanıt.jpg" alt="">
+    <div class="red"></div>
+    <div class="red-2"></div>
+</body>
+</html>
