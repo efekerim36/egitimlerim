@@ -1,0 +1,125 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.baslik-tema {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #00000038;
+}
+
+.incontent {
+    display: flex;
+    border-bottom: 1px solid #00000038;
+    border-right: 1px solid #00000038;
+    border-top: 1px solid #00000038;
+}
+
+.incontent .a-y,
+.menu,
+.butonlar-metinler {
+    padding: 1rem;
+    border-right: 1px solid #00000038;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+
+.a-y {
+    border-left: 1px solid #00000038;
+}
+
+.a-y:hover {
+    padding: 1rem;
+    border-right: 1px solid #ffffff00;
+    border-left: 1px solid #ffffff00;
+    cursor: pointer;
+    background: #00000038;
+}
+
+.menu:hover {
+    padding: 1rem;
+    border-right: 1px solid #ffffff00;
+    cursor: pointer;
+    background: #00000038;
+
+}
+
+.butonlar-metinler:hover {
+    padding: 1rem;
+    border-right: 1px solid #ffffff00;
+    cursor: pointer;
+    background: #00000038;
+}
+
+.aydinlik {
+    width: 140px;
+    height: 190px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px 0px;
+    margin: 2rem;
+    position: relative;
+}
+
+.aydinlik img{
+    
+    border-radius: 10px 10px 0 0;
+}
+
+.a-yazi { 
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+    margin-top: -0.2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.secilen {
+    display: flex;
+    justify-content: center;
+}
+
+.active {
+    background: #a0989865 !important;
+    border-right: 1px solid #ffffff00 !important;
+}
+
+.tik {
+    position: absolute;
+    top:60px;
+    bottom: 0;
+    right: 0;
+    left: 33px;
+}
+
+.tik img {
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+}
+
+.tik {
+    opacity: 0;
+    transition: all .5s ease-in-out;
+}
+
+.tik-ac {
+    opacity: 1;
+}

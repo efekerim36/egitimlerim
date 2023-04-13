@@ -1,0 +1,208 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 17px;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+section {
+    background: rgb(255, 255, 255);
+    padding: 1rem;
+}
+.content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    transition: all .5s ease-in-out;
+    overflow: hidden;
+    margin: 1rem;
+    border-radius: 20px;
+}
+
+.card-content {
+    width: 300px;
+    border: 1px solid #d10010;
+    border-radius: 20px;
+    position: relative;
+}
+
+.tarih {
+    margin: 0;
+    padding: 0.5rem;
+    background: #d10010;
+    border-radius: 20px 20px 0 0;
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+    padding-right: 1rem;
+    font-weight: bold;
+}
+
+.tarih {
+    transition: all .5 ease-in-out;
+}
+
+.tarih p {
+    opacity: 1;
+    transition: all .5s ease-in-out;
+}
+
+.card-incontent {
+    padding: 1rem;
+}
+
+.resim img {
+    width: 100%;
+}
+
+.baslik {
+    margin-bottom: 1rem;
+}
+
+.baslik , .pg {
+    color: #00308b;
+}
+
+.kutu-1 {
+    width: 50%;
+    height: 50%;
+    background: #d10010;
+    position: absolute;
+    top: 37px;
+    left: -10rem;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+}
+.kutu-2 {
+    width: 50%;
+    height: 50%;
+    background: #d10010;
+    position: absolute;
+    top: -10rem;
+    right: 0;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+}
+.kutu-3 {
+    width: 50%;
+    height: 50%;
+    background: #d10010;
+    position: absolute;
+    bottom: -10rem;
+    border-radius: 0 0 0 20px;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+}
+.kutu-4 {
+    width: 50%;
+    height: 50%;
+    background: #d10010;
+    position: absolute;
+    bottom: 0;
+    right: -10rem;
+    border-radius: 0 0 20px 0 ;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+}
+
+.card:hover .kutu-1 {
+    transition: all .5s ease-in-out;
+    opacity: 1;
+    position: absolute;
+    top: 37px;
+    left: 0;
+}
+.card:hover .kutu-2 {
+    transition: all .5s ease-in-out;
+    opacity: 1;
+    top: 37px;
+    right: 0;
+}
+.card:hover .kutu-3 {
+    transition: all .5s ease-in-out;
+    opacity: 1;
+    bottom: 0;
+}
+.card:hover .kutu-4 {
+    transition: all .5s ease-in-out;
+    opacity: 1;
+    bottom: 0;
+    right: 0;
+}
+
+.card:hover .tarih p {
+    opacity: 0;
+    transition: all .5s ease-in-out;
+}
+
+.card-kutular {
+    opacity: .6;
+}
+
+.hover-yazi {
+    position: absolute;
+    top: 50%;
+    color: white;
+    font-weight: bold;
+    transition: all .5s ease-in-out;
+    z-index: 2;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-left: -40rem;
+}
+.hover-yazi a {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.card:hover .hover-yazi {
+    position: absolute;
+    top: 50%;
+    color: white;
+    font-weight: bold;
+    width: 100%;
+    transition: all .5s ease-in-out;
+    margin-left: 0;
+}
+@media (max-width: 480px ) {
+    .card-content {
+        width: 100%;
+        border: 1px solid #d10010;
+        border-radius: 20px;
+        position: relative;
+    }
+    .hover-yazi {
+        position: absolute;
+        top: 50%;
+        color: white;
+        font-weight: bold;
+        transition: all .5s ease-in-out;
+        z-index: 2;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-left: -40rem;
+    }
+
+    .card:hover .hover-yazi {
+        position: absolute;
+        top: 50%;
+        color: white;
+        font-weight: bold;
+        width: 100%;
+        transition: all .5s ease-in-out;
+        margin-left: 0;
+    }
+}

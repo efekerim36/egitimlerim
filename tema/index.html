@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <div class="icerik">
+                <div class="baslik-tema">
+                    <h1>Tema ayarları</h1>
+                    <a href="#"><i class="fa-solid fa-x"></i></a>
+                </div>
+                <div class="incontent">
+                    <div class="a-y">
+                        <a href="javascript:void(0);">Aydınlık veya Karanlık</a>
+                    </div>
+                    <div class="menu">
+                        <a href="javascript:void(0);">Menu</a>
+                    </div>
+                    <div class="butonlar-metinler">
+                        <a href="javascript:void(0);">Buton ve Metinler</a>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="secilen">
+                        <div class="aydinlik">
+                            <a href="#">
+                                <img src="https://fakeimg.pl/140x150/fff">
+                                <div class="a-yazi">
+                                    <p>Aydınlık</p>
+                                </div>
+                                <div class="tik">
+                                    <img src="078e5a42d3594dd96ae37802a26e777e.png" alt="">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="aydinlik">
+                            <a href="#">
+                                <img src="https://fakeimg.pl/140x150/000,128/fff,255">
+                                <div class="a-yazi">
+                                    <p>Aydınlık</p>
+                                </div>
+                                <div class="tik">
+                                    <img src="078e5a42d3594dd96ae37802a26e777e.png" alt="">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+        integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+
+
+        $(function () {
+            $('.incontent div').click(function () {
+                $(this).addClass('active').siblings().removeClass('active');
+            });
+        });
+        $(function () {
+            $('.secilen , .aydinlik , .tik').click(function () {
+                $(this).addClass('tik-ac').siblings().removeClass('tik-ac');
+            });
+        });
+    </script>
+
+</body>
+
+</html>
