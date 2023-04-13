@@ -1,0 +1,11 @@
+row satır klası 
+
+col-md-1 1birimlik div 
+col-md-.. sona kaç yazarsan okadar birimlik div oluyo 
+
+bi sayfada birsatırda 12 birim vardır 
+
+order metin sıralıyo divlerin yerlerini değiştiriyo 
+
+ml mleft -auto soldan boşluk 
+mr mright -auto sağdan boşluk bırakıyo 

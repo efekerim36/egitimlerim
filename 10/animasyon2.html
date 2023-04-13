@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <style>
+            .rules {
+                margin: 20px;
+                width: 80px;
+                height: 80px;
+                padding: 15px;
+                color: white;
+                position: relative;
+                background: rebeccapurple;
+                -webkit-animation: move 5s infinite;
+                animation: Move 5s infinite;
+            }
+
+       
+
+            @-webkit-keyframes Move {
+                from{left: 0;}
+                to{left: 450px;}
+            }
+
+            @keyframes Move {
+                from{left: 0;}
+                to{left: 450px;}
+            }
+
+            .kutu-1{
+                -webkit-animation-timing-function: linear;
+                animation-timing-function: linear;
+            }
+            .kutu-2{
+                -webkit-animation-timing-function: ease;
+                animation-timing-function: ease;
+            }
+            .kutu-3{
+                -webkit-animation-timing-function: ease-in;
+                animation-timing-function: ease-in;
+            }
+            .kutu-4{
+                -webkit-animation-timing-function: ease-out;
+                animation-timing-function: ease-out;
+            }
+            .kutu-5{
+                -webkit-animation-timing-function: ease-in-out;
+                animation-timing-function: ease-in-out;
+            }
+
+            
+        </style>
+    </head>
+
+    <body>
+        <section>
+            <div class="rules kutu-1">
+                KUTU 1
+            </div>
+            <div class="rules kutu-2">
+                KUTU 1
+            </div>
+            <div class="rules kutu-3">
+                KUTU 1
+            </div>
+            <div class="rules kutu-4">
+                KUTU 1
+            </div>
+            <div class="rules kutu-5">
+                KUTU 1
+            </div>
+          
+
+        </section>
+    </body>
+
+    </html>
+</body>
+
+</html>
