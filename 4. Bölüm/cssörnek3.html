@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Form</title>
+    <style>
+        #daire {
+            border-radius: 10px;
+            width: 200px;
+            height: 40px;
+            border: 1px solid blue;
+        }
+        #dairess {
+            border-radius: 10px;
+            width: 625px;
+            height: 170px;
+            border: 1px solid blue;
+        }
+        #daires {
+            border-radius: 300px;
+            background-color: blue;
+            color: white;
+            border: 0px;
+            width: 120px;
+            height: 40px;
+        }
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <form action="process.php">
+
+            <!-- HTML5 Input -->
+            <input type="text" placeholder="Ad" id="daire" name = "name"> 
+            <input type="text" placeholder="soyad" id="daire" name="soyad">
+            <input type="text" placeholder="Numara" id="daire" name="numara"> <br> <br>
+            <textarea name="message" id="dairess" rows="10" cols="68" placeholder="mesajınız"></textarea> <br> <br> <br>
+            <input type="checkbox"> <a href="#">Kvkk metni</a> ve <a href="#">Kullanıcı Sözleşmesi'ni</a> okudum kabul ediyorum</select> <br> <br>
+            <input type="submit" id="daires" value="Gönder">
+
+        </form>
+</body>
+</html>
